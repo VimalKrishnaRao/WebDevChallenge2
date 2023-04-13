@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Double Slider Sign-in and Sign-up Form</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/logo.png" alt="Logo">
+
+      <form id="signin-form">
+        <h2>Sign In</h2>
+        <label for="signin-email">Email</label>
+        <input type="email" id="signin-email" name="email" required>
+        <label for="signin-password">Password</label>
+        <input type="password" id="signin-password" name="password" required>
+        <button type="submit">Sign In</button>
+        <p>Don't have an account? <button id="signup-link">Sign Up</button></p>
+      </form>
+
+      <form id="signup-form" class="hidden">
+        <h2>Sign Up</h2>
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="email" required>
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required>
+        <label for="signup-confirm-password">Confirm Password</label>
+        <input type="password" id="signup-confirm-password" name="confirm-password" required>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <button id="signin-link">Sign In</button></p>
+      </form>
+
+      <div id="signin-overlay" class="overlay">
+        <div>
+          <h3 class="overlay-text">Welcome back!</h3>
+          <button id="signin-overlay-button" class="overlay-button">Sign In</button>
+        </div>
+      </div>
+
+      <div id="signup-overlay" class="overlay">
+        <div>
+          <h3 class="overlay-text">Welcome!</h3>
+          <button id="signup-overlay-button" class="overlay-button">Sign Up</button>
+        </div>
+      </div>
+
+      <img id="signin-icon" class="icon" src="images/icon-signin.png" alt="Sign In Icon">
+      <img id="signup-icon" class="icon" src="images/icon-signup.png" alt="Sign Up Icon">
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
